@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>gshop</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_518606_6676bmcalnrhehfr.css">
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script>
+      /*解决点击响应延时0.3s问题*/
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+          }, false);
+      }
+      if(!window.Promise) {
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+      }
+    </script>
+
+
+
+  </head>
+  <body>
+    <div id="app">
+      <section class="content">
+        <!--首页外卖-->
+        <div class="on">
+          <section class="miste">
+            <!--首页头部-->
+            <header class="msite_header">
+            <span class="header_search">
+              <i class="iconfont icon-sousuo"></i>
+            </span>
+              <span class="header_title">
+              <span class="header_title_text ellipsis">福建省龙岩市</span>
+            </span>
+              <span class="header_login">
+              <span class="header_login_text">登录|注册</span>
+            </span>
+            </header>
+            <!--首页导航-->
+            <nav class="msite_nav">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="javascript:" class="link_to_food">
+                      <div class="food_container">
+                        <img src="./images/nav/1.jpg" alt="">
+                      </div>
+                      <span>甜品饮品</span>
+                    </a>
+                    <a href="javascript:" class="link_to_food">
+                      <div class="food_container">
+                        <img src="./images/nav/2.jpg" alt="">
+                      </div>
+                      <span>商超遍历</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!--首页附近商家-->
+            <div class="msite_shop_list"></div>
+          </section>
+
+        </div>
+        <!--搜索-->
+        <div></div>
+        <!--订单-->
+        <div></div>
+        <!--我的-->
+        <div></div>
+      </section>
+      <!--on表示显示，off表示关闭-->
+      <div class="off"></div>
+      <footer class="footer_guide">
+        <a href="javascript:;" class="guide_item on">
+          <span class="item_icon">
+            <i class="iconfont icon-waimai"></i>
+          </span>
+          <span>外卖</span>
+        </a>
+        <a href="javascript:;" class="guide_item on">
+          <span class="item_icon">
+            <i class="iconfont icon-search"></i>
+          </span>
+          <span>搜索</span>
+        </a>
+        <a href="javascript:;" class="guide_item on">
+          <span class="item_icon">
+            <i class="iconfont icon-dingdan"></i>
+          </span>
+          <span>订单</span>
+        </a>
+        <a href="javascript:;" class="guide_item on">
+          <span class="item_icon">
+            <i class="iconfont icon-geren"></i>
+          </span>
+          <span>我的</span>
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
